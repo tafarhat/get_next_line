@@ -1,0 +1,714 @@
+Affichage de la ligne :[(null)]
+entrer fd :3
+reste was null
+===============entrer fd :3
+entrer reste : [(null)]
+before while reste : []
+affiche reste BEFORE join: []
+buff : [#include "]
+affiche reste after join: [#include "]
+buff : [#include "]
+affiche reste BEFORE join: [#include "]
+buff : [gnl.h"
+#in]
+affiche reste after join: [#include "gnl.h"
+#in]
+buff : [gnl.h"
+#in]
+NEWLINE WAS FOUND!
+END: [#include "gnl.h"
+#in]
+buff : [gnl.h"
+#in]
+ #### after read line
+ >>> extracting line: [(null)], reste [#include "gnl.h"
+#in]
+IN:
+line [(null)], reste [#include "gnl.h"
+#in]
+Affichage de la ligne :[#include "gnl.h"]
+Affichage de reste 1 :[#in]
+ <<< extracting line: [#include "gnl.h"], reste [#in]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [#in]
+NO NEW LINE!
+ line: [#in], reste [#in]
+Affichage de la ligne :[#in]
+===============entrer fd :3
+entrer reste : [#in]
+before while reste : [#in]
+affiche reste BEFORE join: [#in]
+buff : [clude <fcn]
+affiche reste after join: [#include <fcn]
+buff : [clude <fcn]
+affiche reste BEFORE join: [#include <fcn]
+buff : [tl.h>
+int ]
+affiche reste after join: [#include <fcntl.h>
+int ]
+buff : [tl.h>
+int ]
+NEWLINE WAS FOUND!
+END: [#include <fcntl.h>
+int ]
+buff : [tl.h>
+int ]
+ #### after read line
+ >>> extracting line: [#in], reste [#include <fcntl.h>
+int ]
+IN:
+line [#in], reste [#include <fcntl.h>
+int ]
+Affichage de la ligne :[#include <fcntl.h>]
+Affichage de reste 1 :[int ]
+ <<< extracting line: [#include <fcntl.h>], reste [int ]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [int ]
+NO NEW LINE!
+ line: [int ], reste [int ]
+Affichage de la ligne :[int ]
+===============entrer fd :3
+entrer reste : [int ]
+before while reste : [int ]
+affiche reste BEFORE join: [int ]
+buff : [main(int a]
+affiche reste after join: [int main(int a]
+buff : [main(int a]
+affiche reste BEFORE join: [int main(int a]
+buff : [rgc, char ]
+affiche reste after join: [int main(int argc, char ]
+buff : [rgc, char ]
+affiche reste BEFORE join: [int main(int argc, char ]
+buff : [*argv[])
+{]
+affiche reste after join: [int main(int argc, char *argv[])
+{]
+buff : [*argv[])
+{]
+NEWLINE WAS FOUND!
+END: [int main(int argc, char *argv[])
+{]
+buff : [*argv[])
+{]
+ #### after read line
+ >>> extracting line: [int ], reste [int main(int argc, char *argv[])
+{]
+IN:
+line [int ], reste [int main(int argc, char *argv[])
+{]
+Affichage de la ligne :[int main(int argc, char *argv[])]
+Affichage de reste 1 :[{]
+ <<< extracting line: [int main(int argc, char *argv[])], reste [{]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [{]
+NO NEW LINE!
+ line: [{], reste [{]
+Affichage de la ligne :[{]
+===============entrer fd :3
+entrer reste : [{]
+before while reste : [{]
+affiche reste BEFORE join: [{]
+buff : [
+	if (argc]
+affiche reste after join: [{
+	if (argc]
+buff : [
+	if (argc]
+NEWLINE WAS FOUND!
+END: [{
+	if (argc]
+buff : [
+	if (argc]
+ #### after read line
+ >>> extracting line: [{], reste [{
+	if (argc]
+IN:
+line [{], reste [{
+	if (argc]
+Affichage de la ligne :[{]
+Affichage de reste 1 :[	if (argc]
+ <<< extracting line: [{], reste [	if (argc]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	if (argc]
+NO NEW LINE!
+ line: [	if (argc], reste [	if (argc]
+Affichage de la ligne :[	if (argc]
+===============entrer fd :3
+entrer reste : [	if (argc]
+before while reste : [	if (argc]
+affiche reste BEFORE join: [	if (argc]
+buff : [ != 2)
+		r]
+affiche reste after join: [	if (argc != 2)
+		r]
+buff : [ != 2)
+		r]
+NEWLINE WAS FOUND!
+END: [	if (argc != 2)
+		r]
+buff : [ != 2)
+		r]
+ #### after read line
+ >>> extracting line: [	if (argc], reste [	if (argc != 2)
+		r]
+IN:
+line [	if (argc], reste [	if (argc != 2)
+		r]
+Affichage de la ligne :[	if (argc != 2)]
+Affichage de reste 1 :[		r]
+ <<< extracting line: [	if (argc != 2)], reste [		r]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [		r]
+NO NEW LINE!
+ line: [		r], reste [		r]
+Affichage de la ligne :[		r]
+===============entrer fd :3
+entrer reste : [		r]
+before while reste : [		r]
+affiche reste BEFORE join: [		r]
+buff : [eturn -1;
+]
+affiche reste after join: [		return -1;
+]
+buff : [eturn -1;
+]
+NEWLINE WAS FOUND!
+END: [		return -1;
+]
+buff : [eturn -1;
+]
+ #### after read line
+ >>> extracting line: [		r], reste [		return -1;
+]
+IN:
+line [		r], reste [		return -1;
+]
+Affichage de la ligne :[		return -1;]
+Affichage de reste 1 :[]
+ <<< extracting line: [		return -1;], reste []
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+===============entrer fd :3
+entrer reste : []
+before while reste : []
+affiche reste BEFORE join: []
+buff : [
+	int fd =]
+affiche reste after join: [
+	int fd =]
+buff : [
+	int fd =]
+NEWLINE WAS FOUND!
+END: [
+	int fd =]
+buff : [
+	int fd =]
+ #### after read line
+ >>> extracting line: [], reste [
+	int fd =]
+IN:
+line [], reste [
+	int fd =]
+Affichage de la ligne :[]
+Affichage de reste 1 :[	int fd =]
+ <<< extracting line: [], reste [	int fd =]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	int fd =]
+NO NEW LINE!
+ line: [	int fd =], reste [	int fd =]
+Affichage de la ligne :[	int fd =]
+===============entrer fd :3
+entrer reste : [	int fd =]
+before while reste : [	int fd =]
+affiche reste BEFORE join: [	int fd =]
+buff : [ open(argv]
+affiche reste after join: [	int fd = open(argv]
+buff : [ open(argv]
+affiche reste BEFORE join: [	int fd = open(argv]
+buff : [[1], O_RDO]
+affiche reste after join: [	int fd = open(argv[1], O_RDO]
+buff : [[1], O_RDO]
+affiche reste BEFORE join: [	int fd = open(argv[1], O_RDO]
+buff : [NLY);
+	cha]
+affiche reste after join: [	int fd = open(argv[1], O_RDONLY);
+	cha]
+buff : [NLY);
+	cha]
+NEWLINE WAS FOUND!
+END: [	int fd = open(argv[1], O_RDONLY);
+	cha]
+buff : [NLY);
+	cha]
+ #### after read line
+ >>> extracting line: [	int fd =], reste [	int fd = open(argv[1], O_RDONLY);
+	cha]
+IN:
+line [	int fd =], reste [	int fd = open(argv[1], O_RDONLY);
+	cha]
+Affichage de la ligne :[	int fd = open(argv[1], O_RDONLY);]
+Affichage de reste 1 :[	cha]
+ <<< extracting line: [	int fd = open(argv[1], O_RDONLY);], reste [	cha]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	cha]
+NO NEW LINE!
+ line: [	cha], reste [	cha]
+Affichage de la ligne :[	cha]
+===============entrer fd :3
+entrer reste : [	cha]
+before while reste : [	cha]
+affiche reste BEFORE join: [	cha]
+buff : [r *str = N]
+affiche reste after join: [	char *str = N]
+buff : [r *str = N]
+affiche reste BEFORE join: [	char *str = N]
+buff : [ULL;
+	int ]
+affiche reste after join: [	char *str = NULL;
+	int ]
+buff : [ULL;
+	int ]
+NEWLINE WAS FOUND!
+END: [	char *str = NULL;
+	int ]
+buff : [ULL;
+	int ]
+ #### after read line
+ >>> extracting line: [	cha], reste [	char *str = NULL;
+	int ]
+IN:
+line [	cha], reste [	char *str = NULL;
+	int ]
+Affichage de la ligne :[	char *str = NULL;]
+Affichage de reste 1 :[	int ]
+ <<< extracting line: [	char *str = NULL;], reste [	int ]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	int ]
+NO NEW LINE!
+ line: [	int ], reste [	int ]
+Affichage de la ligne :[	int ]
+===============entrer fd :3
+entrer reste : [	int ]
+before while reste : [	int ]
+affiche reste BEFORE join: [	int ]
+buff : [ret = 0;
+
+]
+affiche reste after join: [	int ret = 0;
+
+]
+buff : [ret = 0;
+
+]
+NEWLINE WAS FOUND!
+END: [	int ret = 0;
+
+]
+buff : [ret = 0;
+
+]
+ #### after read line
+ >>> extracting line: [	int ], reste [	int ret = 0;
+
+]
+IN:
+line [	int ], reste [	int ret = 0;
+
+]
+Affichage de la ligne :[	int ret = 0;]
+Affichage de reste 1 :[
+]
+ <<< extracting line: [	int ret = 0;], reste [
+]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [
+]
+Affichage de la ligne :[]
+Affichage de reste 1 :[]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+===============entrer fd :3
+entrer reste : []
+before while reste : []
+affiche reste BEFORE join: []
+buff : [	while ((r]
+affiche reste after join: [	while ((r]
+buff : [	while ((r]
+affiche reste BEFORE join: [	while ((r]
+buff : [et = gnl(f]
+affiche reste after join: [	while ((ret = gnl(f]
+buff : [et = gnl(f]
+affiche reste BEFORE join: [	while ((ret = gnl(f]
+buff : [d, &str)))]
+affiche reste after join: [	while ((ret = gnl(fd, &str)))]
+buff : [d, &str)))]
+affiche reste BEFORE join: [	while ((ret = gnl(fd, &str)))]
+buff : [
+	{
+		/* f]
+affiche reste after join: [	while ((ret = gnl(fd, &str)))
+	{
+		/* f]
+buff : [
+	{
+		/* f]
+NEWLINE WAS FOUND!
+END: [	while ((ret = gnl(fd, &str)))
+	{
+		/* f]
+buff : [
+	{
+		/* f]
+ #### after read line
+ >>> extracting line: [], reste [	while ((ret = gnl(fd, &str)))
+	{
+		/* f]
+IN:
+line [], reste [	while ((ret = gnl(fd, &str)))
+	{
+		/* f]
+Affichage de la ligne :[	while ((ret = gnl(fd, &str)))]
+Affichage de reste 1 :[	{
+		/* f]
+ <<< extracting line: [	while ((ret = gnl(fd, &str)))], reste [	{
+		/* f]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	{
+		/* f]
+Affichage de la ligne :[	{]
+Affichage de reste 1 :[		/* f]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [		/* f]
+NO NEW LINE!
+ line: [		/* f], reste [		/* f]
+Affichage de la ligne :[		/* f]
+===============entrer fd :3
+entrer reste : [		/* f]
+before while reste : [		/* f]
+affiche reste BEFORE join: [		/* f]
+buff : [t_putendl(]
+affiche reste after join: [		/* ft_putendl(]
+buff : [t_putendl(]
+affiche reste BEFORE join: [		/* ft_putendl(]
+buff : [str); */
+	]
+affiche reste after join: [		/* ft_putendl(str); */
+	]
+buff : [str); */
+	]
+NEWLINE WAS FOUND!
+END: [		/* ft_putendl(str); */
+	]
+buff : [str); */
+	]
+ #### after read line
+ >>> extracting line: [		/* f], reste [		/* ft_putendl(str); */
+	]
+IN:
+line [		/* f], reste [		/* ft_putendl(str); */
+	]
+Affichage de la ligne :[		/* ft_putendl(str); */]
+Affichage de reste 1 :[	]
+ <<< extracting line: [		/* ft_putendl(str); */], reste [	]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	]
+NO NEW LINE!
+ line: [	], reste [	]
+Affichage de la ligne :[	]
+===============entrer fd :3
+entrer reste : [	]
+before while reste : [	]
+affiche reste BEFORE join: [	]
+buff : [	ft_strdel]
+affiche reste after join: [		ft_strdel]
+buff : [	ft_strdel]
+affiche reste BEFORE join: [		ft_strdel]
+buff : [(&str);
+	}]
+affiche reste after join: [		ft_strdel(&str);
+	}]
+buff : [(&str);
+	}]
+NEWLINE WAS FOUND!
+END: [		ft_strdel(&str);
+	}]
+buff : [(&str);
+	}]
+ #### after read line
+ >>> extracting line: [	], reste [		ft_strdel(&str);
+	}]
+IN:
+line [	], reste [		ft_strdel(&str);
+	}]
+Affichage de la ligne :[		ft_strdel(&str);]
+Affichage de reste 1 :[	}]
+ <<< extracting line: [		ft_strdel(&str);], reste [	}]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	}]
+NO NEW LINE!
+ line: [	}], reste [	}]
+Affichage de la ligne :[	}]
+===============entrer fd :3
+entrer reste : [	}]
+before while reste : [	}]
+affiche reste BEFORE join: [	}]
+buff : [
+
+	/* ft_p]
+affiche reste after join: [	}
+
+	/* ft_p]
+buff : [
+
+	/* ft_p]
+NEWLINE WAS FOUND!
+END: [	}
+
+	/* ft_p]
+buff : [
+
+	/* ft_p]
+ #### after read line
+ >>> extracting line: [	}], reste [	}
+
+	/* ft_p]
+IN:
+line [	}], reste [	}
+
+	/* ft_p]
+Affichage de la ligne :[	}]
+Affichage de reste 1 :[
+	/* ft_p]
+ <<< extracting line: [	}], reste [
+	/* ft_p]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [
+	/* ft_p]
+Affichage de la ligne :[]
+Affichage de reste 1 :[	/* ft_p]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	/* ft_p]
+NO NEW LINE!
+ line: [	/* ft_p], reste [	/* ft_p]
+Affichage de la ligne :[	/* ft_p]
+===============entrer fd :3
+entrer reste : [	/* ft_p]
+before while reste : [	/* ft_p]
+affiche reste BEFORE join: [	/* ft_p]
+buff : [utendl(str]
+affiche reste after join: [	/* ft_putendl(str]
+buff : [utendl(str]
+affiche reste BEFORE join: [	/* ft_putendl(str]
+buff : [); */
+	ft_]
+affiche reste after join: [	/* ft_putendl(str); */
+	ft_]
+buff : [); */
+	ft_]
+NEWLINE WAS FOUND!
+END: [	/* ft_putendl(str); */
+	ft_]
+buff : [); */
+	ft_]
+ #### after read line
+ >>> extracting line: [	/* ft_p], reste [	/* ft_putendl(str); */
+	ft_]
+IN:
+line [	/* ft_p], reste [	/* ft_putendl(str); */
+	ft_]
+Affichage de la ligne :[	/* ft_putendl(str); */]
+Affichage de reste 1 :[	ft_]
+ <<< extracting line: [	/* ft_putendl(str); */], reste [	ft_]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	ft_]
+NO NEW LINE!
+ line: [	ft_], reste [	ft_]
+Affichage de la ligne :[	ft_]
+===============entrer fd :3
+entrer reste : [	ft_]
+before while reste : [	ft_]
+affiche reste BEFORE join: [	ft_]
+buff : [strdel(&st]
+affiche reste after join: [	ft_strdel(&st]
+buff : [strdel(&st]
+affiche reste BEFORE join: [	ft_strdel(&st]
+buff : [r);
+
+	retu]
+affiche reste after join: [	ft_strdel(&str);
+
+	retu]
+buff : [r);
+
+	retu]
+NEWLINE WAS FOUND!
+END: [	ft_strdel(&str);
+
+	retu]
+buff : [r);
+
+	retu]
+ #### after read line
+ >>> extracting line: [	ft_], reste [	ft_strdel(&str);
+
+	retu]
+IN:
+line [	ft_], reste [	ft_strdel(&str);
+
+	retu]
+Affichage de la ligne :[	ft_strdel(&str);]
+Affichage de reste 1 :[
+	retu]
+ <<< extracting line: [	ft_strdel(&str);], reste [
+	retu]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [
+	retu]
+Affichage de la ligne :[]
+Affichage de reste 1 :[	retu]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [	retu]
+NO NEW LINE!
+ line: [	retu], reste [	retu]
+Affichage de la ligne :[	retu]
+===============entrer fd :3
+entrer reste : [	retu]
+before while reste : [	retu]
+affiche reste BEFORE join: [	retu]
+buff : [rn 0;
+}
+]
+affiche reste after join: [	return 0;
+}
+]
+buff : [rn 0;
+}
+]
+NEWLINE WAS FOUND!
+END: [	return 0;
+}
+]
+buff : [rn 0;
+}
+]
+ #### after read line
+ >>> extracting line: [	retu], reste [	return 0;
+}
+]
+IN:
+line [	retu], reste [	return 0;
+}
+]
+Affichage de la ligne :[	return 0;]
+Affichage de reste 1 :[}
+]
+ <<< extracting line: [	return 0;], reste [}
+]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste [}
+]
+Affichage de la ligne :[}]
+Affichage de reste 1 :[]
+Affichage de la ligne :[(null)]
+entrer fd :3
+IN:
+line [(null)], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+===============entrer fd :3
+entrer reste : []
+before while reste : []
+END: []
+buff : []
+ #### after read line
+ret was 0. line : [], reste []
+IN:
+line [], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+>>> line : [], reste [(null)]
+Affichage de la ligne :[(null)]
+entrer fd :3
+reste was null
+===============entrer fd :3
+entrer reste : [(null)]
+before while reste : []
+END: []
+buff : []
+ #### after read line
+ret was 0. line : [(null)], reste []
+IN:
+line [(null)], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+>>> line : [], reste [(null)]
+Affichage de la ligne :[(null)]
+entrer fd :3
+reste was null
+===============entrer fd :3
+entrer reste : [(null)]
+before while reste : []
+END: []
+buff : []
+ #### after read line
+ret was 0. line : [(null)], reste []
+IN:
+line [(null)], reste []
+NO NEW LINE!
+ line: [], reste []
+Affichage de la ligne :[]
+>>> line : [], reste [(null)]
+Affichage de la ligne :[(null)]
+entrer fd :3
+reste was null

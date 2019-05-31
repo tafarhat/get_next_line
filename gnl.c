@@ -72,7 +72,7 @@ static int readline(const int fd, char **reste)
 	if (*reste == NULL)
 		*reste = ft_strnew(0);
 	printf("before while reste : [%s]\n", *reste);
-	(void)getchar();
+	/* (void)getchar(); */
 	while ((ret = read(fd,buff,BUFF_SIZE)) > 0)	 //
 	{
 		buff[ret] = '\0';
@@ -80,11 +80,11 @@ static int readline(const int fd, char **reste)
 		printf("affiche reste BEFORE join: [%s]\nbuff : [%s]\n", *reste, buff);
 		*reste = ft_strjoin(*reste, buff);
 		printf("affiche reste after join: [%s]\nbuff : [%s]\n", *reste, buff);
-		(void)getchar();
+		/* (void)getchar(); */
 		if (ft_strchr(*reste, '\n'))
 		{
 			printf("NEWLINE WAS FOUND!\n");
-			(void)getchar();
+			/* (void)getchar(); */
 			break;
 		}
 		ft_strdel(&tmp);
@@ -97,7 +97,7 @@ int gnl(const int fd, char **line)
 {
 	printf("Affichage de la ligne :[%s]\n", *line);
 	printf("entrer fd :%d\n",fd);
-	(void)getchar();
+	/* (void)getchar(); */
 
 	static char *reste[255] = {NULL}; // declarartion d'un tableau de chaines de caracteres de taille 255
 
@@ -109,18 +109,18 @@ int gnl(const int fd, char **line)
 		return (true);
 
 	printf("===============");
-	(void)getchar();
+	/* (void)getchar(); */
 	int ret = readline(fd, &reste[fd]);	   // Sinon on va lire jusqu a le '\n'. la valeur de ret signifie ce qui a lire la fonction read
 
 	printf(" #### after read line\n");
-	(void)getchar();
+	/* (void)getchar(); */
 
 	if (ret < 0)					  // erreur
 		return (err);
 	else if (ret > 0)
 	{
 		printf(" >>> extracting line: [%s], reste [%s]\n", *line, reste[fd]);
-		(void)getchar();
+		/* (void)getchar(); */
 		ft_getline(&reste[fd], line);
 		printf(" <<< extracting line: [%s], reste [%s]\n", *line, reste[fd]);
 		return (true);
