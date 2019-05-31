@@ -37,24 +37,31 @@ static int ft_getline(char **reste, char **line) // faker 3lash khasna char **re
 		return false;
 	else
 	{
-		old = *reste;
+		old = reste;
 		temp = ft_strchr(*reste, '\n');       // ===> temp = "abcd"
+		if (temp == NULL)
+		{
+			*line = ft_strdup(*reste);
+			return (false);
+		}
 		*temp = '\0';			      // ===> temp = "abcd'\0'"
 		*line = ft_strdup(*reste);	      // ===> reste = "efg'\n'hij'\n'"
 		*reste = ft_strdup(temp + 1);
 		ft_strdel(old);
-		return (true);}
+		return (true);
+	}
 
 }
 
-static int readline(char *reste)
+static int readline(const int fd, char **reste)
 {
 	int ret;
 	char buff[BUFF_SIZE];                      // BUFF_SIZE = 7
 	char *tmp;
-	if (reste == NULL)
-		reste = ft_strnew(0);
-	while (ret = read(fd,buff,BUFF_SIZE) > 0)  //  
+	
+	if (*reste == NULL)
+		*reste = ft_strnew(0);
+	while ((ret = read(fd,buff,BUFF_SIZE)) > 0)  //  
 	{
 		buff[ret] = '\0';
 		tmp = *reste;
@@ -70,26 +77,27 @@ int gnl(const int fd, char **line)
 {
 	static char *reste[255] = {NULL}; // declarartion d'un tableau de chaines de caracteres de taille 255
 
-	if (gderr(fd,line))              // gestion d'erreur 
+	if (gderr(fd, line))              // gestion d'erreur 
 		return (err);
-	if (ft_getline(&reste[fd],line))   // Si la ligne contient un '\n' extracter la ligne et retourner 1
-		return (false);                 
-	int ret = readline(reste[fd]);    // Sinon on va lire jusqu a le '\n'. la valeur de ret signifie ce qui a lire la fonction read  
+
+	*line = NULL;
+	if (ft_getline(&reste[fd], line))   // Si la ligne contient un '\n' extracter la ligne et retourner 1
+		return (true);                 
+	int ret = readline(fd, &reste[fd]);    // Sinon on va lire jusqu a le '\n'. la valeur de ret signifie ce qui a lire la fonction read  
 
 	if (ret < 0)                      // erreur
 		return (err);
-	else if (ret > 0)    		  // scenarion parfait
+	else if (ret > 0) 
+	{   		  
+		ft_getline(&reste[fd], line);
 		return (true);
+	}
 	else      			  // 
 	{
-		if (reste[fd] != NULL)     
-
-		{
-			ft_getline(reste[fd],line);
-			return (true);
-		}
-		else
-			return (false);
+		ft_getline(&reste[fd], line);
+		if (*line != NULL)
+			ft_strdel(&reste[fd]);
+		return (*line != NULL);
 	}
 
 	/* 1- verifier les variable par gderr */
