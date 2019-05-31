@@ -10,12 +10,12 @@ int main(int argc, char *argv[])
 	int ret = 0;
 
 	while ((ret = gnl(fd, &str)))
-	{	
-		ft_putendl(str);
+	{
+		/* ft_putendl(str); */
 		ft_strdel(&str);
 	}
-	
-	ft_putendl(str);
+
+	/* ft_putendl(str); */
 	ft_strdel(&str);
 
 	return 0;
