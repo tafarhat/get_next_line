@@ -42,11 +42,14 @@ static int ft_getline(char **reste, char **line) // faker 3lash khasna char **re
 		if (temp == NULL)
 		{
 			*line = ft_strdup(*reste);
+			 printf("Affichage de la ligne :%s", *line);
 			return (false);
 		}
 		*temp = '\0';			      // ===> temp = "abcd'\0'"
 		*line = ft_strdup(*reste);	      // ===> reste = "efg'\n'hij'\n'"
+		printf("Affichage de la ligne :%s", *line);
 		*reste = ft_strdup(temp + 1);
+		printf("Affichage de reste 1 :%s", *reste);
 		ft_strdel(old);
 		return (true);
 	}
@@ -59,6 +62,8 @@ static int readline(const int fd, char **reste)
 	char buff[BUFF_SIZE];                      // BUFF_SIZE = 7
 	char *tmp;
 	
+	printf("entrer fd :%d",fd);
+	printf("entrer reste : %s", *reste);
 	if (*reste == NULL)
 		*reste = ft_strnew(0);
 	while ((ret = read(fd,buff,BUFF_SIZE)) > 0)  //  
@@ -66,6 +71,7 @@ static int readline(const int fd, char **reste)
 		buff[ret] = '\0';
 		tmp = *reste;
 		ft_strjoin(*reste,buff);
+		printf("affiche reste 2: %s", *reste);
 		if (ft_strchr(*reste, '\n'))
 			break;
 		ft_strdel(&tmp);
@@ -75,6 +81,8 @@ static int readline(const int fd, char **reste)
 
 int gnl(const int fd, char **line)
 {
+	printf("Affichage de la ligne :%s", *line);
+	printf("entrer fd :%d",fd);
 	static char *reste[255] = {NULL}; // declarartion d'un tableau de chaines de caracteres de taille 255
 
 	if (gderr(fd, line))              // gestion d'erreur 
@@ -84,6 +92,7 @@ int gnl(const int fd, char **line)
 	if (ft_getline(&reste[fd], line))   // Si la ligne contient un '\n' extracter la ligne et retourner 1
 		return (true);                 
 	int ret = readline(fd, &reste[fd]);    // Sinon on va lire jusqu a le '\n'. la valeur de ret signifie ce qui a lire la fonction read  
+
 
 	if (ret < 0)                      // erreur
 		return (err);
